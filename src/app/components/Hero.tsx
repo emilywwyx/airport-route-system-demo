@@ -9,24 +9,36 @@ export function Hero() {
           <Plane className="w-4 h-4" />
           <span className="text-sm font-medium">Portfolio Project</span>
         </div>
-        
+
         <h1 className="text-5xl font-bold text-gray-900 mb-6">
           Airport Route Optimization System
         </h1>
-        
+
         <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
           A high-performance graph algorithm implementation for optimizing flight routes.
           Built with custom data structures achieving 60% lower memory footprint and 35% higher throughput.
         </p>
-        
+
         <div className="flex items-center justify-center gap-4">
-          <Button size="lg" className="gap-2">
+          <Button
+            size="lg"
+            className="gap-2"
+            onClick={() =>
+              window.open("https://github.com/emilywwyx/airport-route-system", "_blank")
+            }
+          >
             <Github className="w-5 h-5" />
             View on GitHub
           </Button>
-          <Button size="lg" variant="outline" className="gap-2">
+
+          <Button
+            size="lg"
+            variant="outline"
+            className="gap-2"
+            onClick={() => window.open("/airport-route-writeup.pdf", "_blank")}
+          >
             <FileText className="w-5 h-5" />
-            Technical Writeup
+            Technical Write-Up
           </Button>
         </div>
       </div>
